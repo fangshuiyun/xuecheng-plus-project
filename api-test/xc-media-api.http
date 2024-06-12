@@ -1,0 +1,9 @@
+### 上传文件
+POST {{media_host}}/media/upload/coursefile
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="filedata"; filename="C001-P16_0.jpg"
+Content-Type: application/octet-stream
+
+< d:\pytorch\Rec_HandWritten\data\test2\image\C001-P16_0.jpg

@@ -1,0 +1,80 @@
+### 分页查询
+POST {{gateway_host}}/content/course/list?pageNo=1&pageSize=2
+Content-Type: application/json
+
+{
+  "auditStatus": "202004",
+  "courseName": "java",
+  "publishStatus": ""
+}
+
+### 查询课程分类
+GET {{gateway_host}}/content/course-category/tree-nodes
+
+### 创建课程
+POST {{content_host}}/content/course
+Content-Type: application/json
+
+{
+  "charge": "201001",
+  "price": 10,
+  "originalPrice": 100,
+  "qq": "22333",
+  "wechat": "223344",
+  "phone": "13333333",
+  "validDays": 365,
+  "mt": "1-1",
+  "st": "1-1-1",
+  "name": "",
+  "pic": "fasda",
+  "teachmode": "200002",
+  "users": "初级人员",
+  "tags": "fshdahdada",
+  "grade": "204001",
+  "description": "java基础编程，适用初级人员"
+}
+
+
+### 查询课程信息
+GET {{content_host}}/content/course/40
+
+### 查询某个课程的课程计划
+GET {{content_host}}/content/teachplan/117/tree-nodes
+
+
+### 删除课程计划
+DELETE {{content_host}}/content/teachplan/43
+
+
+### 查询教师接口
+GET {{content_host}}/content/courseTeacher/list/82
+
+### 查询教师接口
+POST {{content_host}}/content/courseTeacher
+Content-Type: application/json
+
+{
+  "courseId": 75,
+  "teacherName": "王老师",
+  "position": "教师职位",
+  "introduction": "教师简介"
+}
+
+
+### 修改教师接口
+PUT {{content_host}}/content/courseTeacher
+Content-Type: application/json
+
+{
+  "id": 21,
+  "courseId": 75,
+  "teacherName": "王一老师",
+  "position": "教师职位",
+  "introduction": "教师简介",
+  "photograph": null,
+  "createDate": null
+}
+
+
+### 删除
+DELETE {{content_host}}/content/courseTeacher/course/75/21
