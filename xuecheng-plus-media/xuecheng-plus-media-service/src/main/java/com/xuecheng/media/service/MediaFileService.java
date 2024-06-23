@@ -58,4 +58,6 @@ public interface MediaFileService {
  public File downloadFileFromMinIO(String bucket, String objectName);
 
  public boolean addMediaFilesToMinIO(String localFilePath,String mimeType,String bucket, String objectName);
+
+ MediaFiles getFileById(String mediaId);
 }
