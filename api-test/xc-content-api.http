@@ -9,7 +9,7 @@ Content-Type: application/json
 }
 
 ### 查询课程分类
-GET {{gateway_host}}/content/course-category/tree-nodes
+GET {{content_host}}/content/course-category/tree-nodes
 
 ### 创建课程
 POST {{content_host}}/content/course
@@ -36,7 +36,8 @@ Content-Type: application/json
 
 
 ### 查询课程信息
-GET {{content_host}}/content/course/40
+GET {{gateway_host}}/content/course/40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOlsieHVlY2hlbmctcGx1cyJdLCJ1c2VyX25hbWUiOiJ6aGFuZ3NhbiIsInNjb3BlIjpbImFsbCJdLCJleHAiOjE3MTkzMTg2ODYsImF1dGhvcml0aWVzIjpbInAxIl0sImp0aSI6ImZlOWVkYWY0LTk2OGYtNDEyNy1iMDQ0LTk0NzU4OTllMTM1NyIsImNsaWVudF9pZCI6IlhjV2ViQXBwIn0.HH6h_ElXCdk7ApIj3G2YcxgWdGpr7iu_Sbm85nJaz6g
 
 ### 查询某个课程的课程计划
 GET {{content_host}}/content/teachplan/117/tree-nodes
