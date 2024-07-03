@@ -55,8 +55,8 @@ public class PayTestController {
 
 
     //接收通知
-    @PostMapping("/paynotify")
-    public void paynotify(HttpServletRequest request,HttpServletResponse response) throws IOException, AlipayApiException {
+    @PostMapping("/paynotifyTest")
+    public void paynotifyTest(HttpServletRequest request,HttpServletResponse response) throws IOException, AlipayApiException {
         Map<String,String> params = new HashMap<String,String>();
         Map requestParams = request.getParameterMap();
         for (Iterator iter = requestParams.keySet().iterator(); iter.hasNext();) {
